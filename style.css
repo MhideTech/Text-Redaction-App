@@ -4,7 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* overflow: hidden; */
+    list-style: none;
+    font-family: 'Poppins', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 header{
@@ -27,7 +28,7 @@ header h1{
     height: 83vh;
     margin: 0px auto;
     display: flex;
-    flex-wrap: wrap !important;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -70,7 +71,21 @@ header h1{
     text-align: justify;
     margin: 30px 0px;
     font-size: 1.3rem;
-    font-family: 'Poppins', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#redactedTextCont .stats p{
+    margin: 40px 0px 8px;
+    font-family: 'Agbalumo', sans-serif;
+    text-decoration: underline;
+}
+
+#redactedTextCont .stats ul li{
+    font-size: 1rem;
+    margin: 3px 0px;
+}
+
+#redactedTextCont .stats ul li i{
+    margin: 0px 7px 0px 0px;
 }
 
 #redactedTextCont .socialMedia{
@@ -94,7 +109,6 @@ textarea, input, button {
     padding: 10px;
     border: 1px solid rgb(2, 2, 68);
     outline: none;
-    font-family: 'Poppins', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 textarea{
@@ -127,7 +141,6 @@ footer{
 footer p{
     color: white;
     font-size: 1.3rem;
-    font-family: 'Poppins', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 footer p span{
