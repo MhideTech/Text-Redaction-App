@@ -19,12 +19,12 @@ function check(str, reg) {
 btn.addEventListener("click", function () {
   const originalText = originalTextEl.value;
   const wordsToRedact = wordsToRedactEl.value.split(" ");
+  console.log(wordsToRedact);
 
   // Loop through each word to redact and replace them with asterisks
   let redactedText = originalText;
   wordsToRedact.forEach((word) => {
-    const regex = new RegExp("\\b" + word + "\\b", "gi");
-    console.log(word);
+    let regex = new RegExp("\\b" + word + "\\b", "gi");
     redactedText = redactedText.replace(
       regex,
       check(symbolToRedactWith.value, word)
@@ -37,8 +37,10 @@ btn.addEventListener("click", function () {
     <div class="stats">
       <p>Statistics:</p>
       <ul>
-        <li><i class="fa-solid fa-magnifying-glass"></i> Scanned words: 0 words</li>
-        <li><i class="fa-regular fa-file-word"></i> Matched words: 0 words</li>
+        <li><i class="fa-solid fa-magnifying-glass"></i> Scanned words: ${
+          originalText.split(" ").length
+        } words</li>
+        <li><i class="fa-regular fa-file-word"></i> Matched words: ${regex.length} words</li>
         <li><i class="fa-solid fa-a"></i> Characters scrambled: 0 characters</li>
         <li><i class="fa-regular fa-clock"></i> Duration: 0 seconds</li>
       </ul>
