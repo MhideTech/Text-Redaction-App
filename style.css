@@ -76,14 +76,15 @@ header h1{
 #redactedTextCont .socialMedia{
     width: 30%;
     height: 80px;
-    background-color: red;
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
+    margin: 50px 0px;
 }
 #redactedTextCont .socialMedia i{
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: white;
+    margin: 0px 5px;
+}
+#redactedTextCont .socialMedia p{
+    margin: 0px 0px 10px;
 }
 
 textarea, input, button {

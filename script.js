@@ -2,6 +2,7 @@ let btn = document.getElementById("redactButton");
 let originalTextEl = document.getElementById("originalText");
 let wordsToRedactEl = document.getElementById("wordsToRedact");
 let symbolToRedactWith = document.getElementById("symbolToRedactWith");
+let redactedTextEl = document.getElementById("redactedText");
 
 function check(str, reg){
   let symbol = '';
@@ -27,5 +28,18 @@ btn.addEventListener("click", function () {
     redactedText = redactedText.replace(regex, check(symbolToRedactWith.value, word));
   });
 
-  document.getElementById("redactedText").textContent = redactedText;
+  redactedTextEl.textContent = redactedText;
+
+  const html = `
+  <div class="socialMedia">
+                    <p>Share:</p>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+  `;
+
+  redactedTextEl.insertAdjacentHTML('beforeend', html);
 });
