@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+header{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(2, 2, 68);
+}
+
+header h1{
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'Agbalumo', sans-serif;
+}
+
+.container {
+    width: 95%;
+    height: 83vh;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap !important;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .output{
+    width: 63%;
+}
+
+.container .form{
+    width: 35%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#redactedTextCont {
+    width: 100%;
+    height: 75vh;
+    background-color: #bbb;
+    margin: 20px 0px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    overflow-y: scroll;
+    position: relative;
+}
+
+#redactedTextCont::-webkit-scrollbar{
+    width: 5px;
+}
+
+#redactedTextCont h1{
+    font-size: 18px;
+    user-select: none;
+    font-family: 'Agbalumo', sans-serif;
+}
+
+#redactedTextCont p{
+    text-align: justify;
+    margin: 30px 0px;
+    font-size: 1.3rem;
+    font-family: 'Poppins', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#redactedTextCont .socialMedia{
+    width: 30%;
+    height: 80px;
+    background-color: red;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+#redactedTextCont .socialMedia i{
+    font-size: 2rem;
+    color: white;
+}
+
+textarea, input, button {
+    display: inline-block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid rgb(2, 2, 68);
+    outline: none;
+    font-family: 'Poppins', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+textarea{
+    height: 30vh;
+    font-size: 1.4rem;
+}
+
+input{
+    height: 80px;
+    font-size: 1.2rem;
+}
+
+button{
+    background-color: rgb(2, 2, 68);
+    color: white;
+    font-size: 1.3rem;
+}
+
+footer{
+    width: 100%;
+    height: 7vh;
+    background-color: rgb(2, 2, 68);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+}
+
+footer p{
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Poppins', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer p span{
+    font-family: 'Agbalumo', sans-serif;
+}
+
+@media only screen and (max-width: 576px) {
+    header{
+        height: 8vh;
+    }
+
+    header h1{
+        font-size: 2rem;
+    }
+
+    .container .output{
+        width: 100%;
+        height: 45vh;
+        background-color: red;
+    }
+
+    .container #redactedTextCont{
+        height: 42vh;
+        padding: 10px;
+    }
+
+    .container #redactedTextCont p{
+        margin: 10px 0px;
+        font-size: 1.15rem;
+    }
+
+    .container .form{
+        width: 100%;
+        height: 40vh;
+    }
+
+    textarea, input{
+        margin: 5px 0px;
+    }
+
+    textarea{
+        height: 100px;
+        font-size: 1rem;
+    }
+
+    input{
+        height: 50px;
+        font-size: 1rem;
+    }
+
+    button{
+        margin: 5px 0px;
+        font-size: 1rem;
+    }
+
+    footer p{
+        font-size: 1rem;
+    }
+}
