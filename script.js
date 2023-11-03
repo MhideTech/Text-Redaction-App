@@ -16,9 +16,15 @@ function check(str, reg) {
   return symbol;
 }
 
+
 btn.addEventListener("click", function () {
-  const originalText = originalTextEl.value;
-  const wordsToRedact = wordsToRedactEl.value.split(" ");
+  if(originalTextEl.value == '' && wordsToRedactEl.value == ''){
+    alert('Please fill in the input fields');
+    return;
+  } 
+
+  const originalText = originalTextEl.value.trim();
+  const wordsToRedact = wordsToRedactEl.value.trim().split(" ");
   console.log(wordsToRedact);
 
   // Loop through each word to redact and replace them with asterisks
@@ -30,7 +36,7 @@ btn.addEventListener("click", function () {
     let regex = new RegExp("\\b" + word + "\\b", "gi");
     redactedText = redactedText.replace(
       regex,
-      check(symbolToRedactWith.value, word)
+      check(symbolToRedactWith.value.trim(), word)
     );
     matchedWords = wordsToRedact.length;
     totalScrambledCharacters += word.length;
