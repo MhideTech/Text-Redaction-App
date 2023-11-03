@@ -1,26 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:wght@600&display=swap');
 
+/* Universal Stylings */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     font-family: 'Poppins', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-x: hidden;
 }
 
+/* Root variables */
+:root{
+    --mainColor: rgb(2, 2, 68);
+    --subColor: #fff;
+    --primaryColor: #000;
+    --headFont: 'Agbalumo', sans-serif;
+}
+
+/* General Styling on some Elements */
+p, textarea, input, button{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+/* Header styling */
 header{
     width: 100%;
     height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(2, 2, 68);
+    background-color: var(--mainColor);
 }
 
 header h1{
-    color: white;
+    color: var(--subColor);
     font-size: 2.5rem;
-    font-family: 'Agbalumo', sans-serif;
+    font-family: var(--headFont);
 }
 
 .container {
@@ -51,7 +68,7 @@ header h1{
     height: 75vh;
     background-color: #bbb;
     padding: 20px;
-    border: 2px solid black;
+    border: 2px solid var(--primaryColor);
     border-radius: 5px;
     overflow-y: scroll;
     position: relative;
@@ -62,20 +79,18 @@ header h1{
 }
 
 #redactedTextCont h1{
-    font-size: 18px;
+    font-size: 1.3rem;
     user-select: none;
-    font-family: 'Agbalumo', sans-serif;
+    font-family: var(--headFont);
 }
 
 #redactedTextCont p{
-    text-align: justify;
     margin: 30px 0px;
-    font-size: 1.3rem;
 }
 
 #redactedTextCont .stats p, .socialMedia p{
     margin: 50px 0px 8px;
-    font-family: 'Agbalumo', sans-serif;
+    font-family: var(--headFont);
     text-decoration: underline;
 }
 
@@ -95,9 +110,8 @@ header h1{
 }
 #redactedTextCont .socialMedia i{
     font-size: 1.6rem;
-    /* color: white; */
     margin: 0px 5px;
-    color: rgb(2, 2, 68);
+    color: var(--mainColor);
 }
 #redactedTextCont .socialMedia p{
     margin: 0px 0px 10px;
@@ -106,45 +120,72 @@ header h1{
 textarea, input, button {
     display: inline-block;
     width: 100%;
-    margin: 10px 0;
+    margin: 10px 0px;
     padding: 10px;
-    border: 1px solid rgb(2, 2, 68);
+    border: 1px solid var(--mainColor);
     outline: none;
 }
 
 textarea{
     height: 30vh;
-    font-size: 1.4rem;
 }
 
 input{
-    height: 80px;
-    font-size: 1.2rem;
+    height: 8vh;
 }
 
 button{
-    background-color: rgb(2, 2, 68);
-    color: white;
-    font-size: 1.3rem;
+    background-color: var(--mainColor);
+    color: var(--subColor);
+    text-align: center;
+    padding: 15px;
+}
+
+.alert{
+    width: 400px;
+    height: 150px;
+    background-color: var(--subColor);
+    border: 1px solid var(--mainColor);
+    padding: 10px ;
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    animation-name: moveInLeft;
+    animation-duration: 1.5s;
+}
+
+.alert p{
+    margin: 15px 0px;
+}
+
+.alert h6{
+    font-size: 1rem;
+}
+
+.alert button{
+    width: fit-content;
+    padding: 5px 15px;
+    font-size: 1rem;
+    float: right;
 }
 
 footer{
     width: 100%;
     height: 8vh;
-    background-color: rgb(2, 2, 68);
+    background-color: var(--mainColor);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 footer p{
-    color: white;
-    font-size: 1.3rem;
-    font-family: 'Agbalumo', sans-serif;
+    color: var(--subColor);
+    font-family: var(--headFont);
 }
 
 footer p span{
     text-decoration: underline;
+    font-family: var(--headFont);
 }
 
 @media only screen and (max-width: 576px) {

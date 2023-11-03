@@ -9,32 +9,40 @@
 </head>
 <body>
 
+    <!-- Header -->
     <header>
         <h1>Text Redaction App</h1>
     </header>
 
+    <!-- Body -->
     <div class="container">
+        <!-- Output (display) Section -->
         <div class="output">
             <div id="redactedTextCont">
                 <h1>Redacted Text</h1>
-                <p id="redactedText"></p>
-                
-                
+                <p id="redactedText"></p>                
             </div>
         </div>
-        <div class="form">
-            <!-- <div class="" style="width: 100%;"> -->
-                <textarea id="originalText" placeholder="Enter your text here"></textarea>
-                <input type="text" id="wordsToRedact" placeholder="Words to Redact (space-separated)">
-                <input type="text" id="symbolToRedactWith" placeholder="Letter or Symbol to redact with">
-                <button id="redactButton">Redact Now</button>
 
-            <!-- </div> -->
+        <!-- Form (input) Section -->
+        <div class="form">
+            <textarea id="originalText" placeholder="Enter your text here"></textarea>
+            <input type="text" id="wordsToRedact" placeholder="Words to Redact (space-separated)">
+            <input type="text" id="symbolToRedactWith" placeholder="Letter or Symbol to redact with">
+            <button id="redactButton">Redact Now</button>
         </div>
     </div>
 
+    <!-- Alert Window -->
+    <div class="alert">
+        <h6>Text Redaction App says</h6>
+        <p>Some text</p>
+        <button>OK</button>
+    </div>
+
+    <!-- Footer -->
     <footer>
-        <p>Developed by <span>Okefolahan Olamide Israel</span></p>
+        <p> < Developed by <span> Okefolahan Olamide Israel</span> /></p>
     </footer>
 
     
