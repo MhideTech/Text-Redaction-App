@@ -161,6 +161,7 @@ footer p span{
     .container .output{
         width: 100%;
         height: 40vh;
+        margin: 20px 0px 0px;
     }
 
     .container #redactedTextCont{
