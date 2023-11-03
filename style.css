@@ -95,8 +95,9 @@ header h1{
 }
 #redactedTextCont .socialMedia i{
     font-size: 1.6rem;
-    color: white;
+    /* color: white; */
     margin: 0px 5px;
+    color: rgb(2, 2, 68);
 }
 #redactedTextCont .socialMedia p{
     margin: 0px 0px 10px;

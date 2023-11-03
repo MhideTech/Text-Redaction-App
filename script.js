@@ -23,12 +23,17 @@ btn.addEventListener("click", function () {
 
   // Loop through each word to redact and replace them with asterisks
   let redactedText = originalText;
+  let totalScrambledCharacters = 0;
+  let matchedWords = 0;
+
   wordsToRedact.forEach((word) => {
     let regex = new RegExp("\\b" + word + "\\b", "gi");
     redactedText = redactedText.replace(
       regex,
       check(symbolToRedactWith.value, word)
     );
+    matchedWords = wordsToRedact.length;
+    totalScrambledCharacters += word.length;
   });
 
   redactedTextEl.textContent = redactedText;
@@ -40,9 +45,9 @@ btn.addEventListener("click", function () {
         <li><i class="fa-solid fa-magnifying-glass"></i> Scanned words: ${
           originalText.split(" ").length
         } words</li>
-        <li><i class="fa-regular fa-file-word"></i> Matched words: ${regex.length} words</li>
-        <li><i class="fa-solid fa-a"></i> Characters scrambled: 0 characters</li>
-        <li><i class="fa-regular fa-clock"></i> Duration: 0 seconds</li>
+        <li><i class="fa-regular fa-file-word"></i> Matched words: ${matchedWords} words</li>
+        <li><i class="fa-solid fa-a"></i> Characters scrambled: ${totalScrambledCharacters} characters</li>
+        <li><i class="fa-regular fa-clock"></i> Duration: ${1} second(s)</li>
       </ul>
     </div>
 
