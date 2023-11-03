@@ -40,6 +40,7 @@ header h1{
     font-family: var(--headFont);
 }
 
+/* Body Styling */
 .container {
     width: 95%;
     height: 83vh;
