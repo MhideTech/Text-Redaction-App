@@ -3,6 +3,8 @@ let originalTextEl = document.getElementById("originalText");
 let wordsToRedactEl = document.getElementById("wordsToRedact");
 let symbolToRedactWith = document.getElementById("symbolToRedactWith");
 let redactedTextEl = document.getElementById("redactedText");
+let alert = document.getElementById("alert");
+let ok = document.getElementById("ok");
 
 function check(str, reg) {
   let symbol = "";
@@ -19,7 +21,8 @@ function check(str, reg) {
 
 btn.addEventListener("click", function () {
   if(originalTextEl.value == '' && wordsToRedactEl.value == ''){
-    alert('Please fill in the input fields');
+    // alert('Please fill in the input fields');
+    alert.classList.remove('hidden')
     return;
   } 
 
@@ -69,3 +72,13 @@ btn.addEventListener("click", function () {
 
   redactedTextEl.insertAdjacentHTML("beforeend", html);
 });
+
+ok.addEventListener('click', function(){
+  alert.style.animationName = 'moveInRight';
+
+  setTimeout(() => {
+    alert.classList.add('hidden');
+  }, 1000);
+
+  return;
+})
