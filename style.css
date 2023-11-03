@@ -169,6 +169,10 @@ footer p span{
         padding: 10px;
     }
 
+    .container #redactedTextCont ul li{
+        font-size: .8rem;
+    }
+
     .container #redactedTextCont p{
         margin: 10px 0px;
         font-size: 1rem;
