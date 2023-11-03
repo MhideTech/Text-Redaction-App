@@ -140,10 +140,11 @@ footer{
 footer p{
     color: white;
     font-size: 1.3rem;
+    font-family: 'Agbalumo', sans-serif;
 }
 
 footer p span{
-    font-family: 'Agbalumo', sans-serif;
+    text-decoration: underline;
 }
 
 @media only screen and (max-width: 576px) {
@@ -176,6 +177,10 @@ footer p span{
     .container #redactedTextCont p{
         margin: 10px 0px;
         font-size: 1rem;
+    }
+
+    #redactedTextCont .socialMedia{
+        margin: 0px;
     }
 
     .container .form{
