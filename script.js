@@ -71,6 +71,8 @@ btn.addEventListener("click", function () {
   `;
 
   redactedTextEl.insertAdjacentHTML("beforeend", html);
+
+  originalTextEl.value = wordsToRedactEl.value = symbolToRedactWith.value = '';
 });
 
 ok.addEventListener('click', function(){

@@ -26,6 +26,7 @@ p, textarea, input, button{
 
 .hidden{
     display: none;
+    opacity: 0;
 }
 
 /* Animation Effects */
@@ -176,6 +177,7 @@ button{
     bottom: 20px;
     animation-name: moveInLeft;
     animation-duration: 1.1s;
+    animation-timing-function: ease-in;
 }
 
 #alert p{
@@ -251,7 +253,7 @@ footer p span a:visited, a:link {
 
     #redactedTextCont .socialMedia{
         margin: 0px;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .container .form{
