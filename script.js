@@ -46,7 +46,7 @@ btn.addEventListener("click", function () {
           originalText.split(" ").length
         } words</li>
         <li><i class="fa-regular fa-file-word"></i> Matched words: ${matchedWords} words</li>
-        <li><i class="fa-solid fa-a"></i> Characters scrambled: ${totalScrambledCharacters} characters</li>
+        <li><i class="fa-solid fa-a"></i> Characters scrambled: ${totalScrambledCharacters} chars</li>
         <li><i class="fa-regular fa-clock"></i> Duration: ${1} second(s)</li>
       </ul>
     </div>
