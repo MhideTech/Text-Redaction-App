@@ -73,7 +73,7 @@ header h1{
     font-size: 1.3rem;
 }
 
-#redactedTextCont .stats p{
+#redactedTextCont .stats p, .socialMedia p{
     margin: 50px 0px 8px;
     font-family: 'Agbalumo', sans-serif;
     text-decoration: underline;
