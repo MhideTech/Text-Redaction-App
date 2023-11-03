@@ -135,8 +135,6 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    bottom: 0;
 }
 
 footer p{
@@ -162,12 +160,12 @@ footer p span{
     }
     .container .output{
         width: 100%;
-        height: 40vh;
+        height: 38vh;
         margin: 20px 0px 0px;
     }
 
     .container #redactedTextCont{
-        height: 38vh;
+        height: 37vh;
         padding: 10px;
     }
 
