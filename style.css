@@ -74,7 +74,7 @@ header h1{
 }
 
 #redactedTextCont .stats p{
-    margin: 40px 0px 8px;
+    margin: 50px 0px 8px;
     font-family: 'Agbalumo', sans-serif;
     text-decoration: underline;
 }
@@ -89,9 +89,9 @@ header h1{
 }
 
 #redactedTextCont .socialMedia{
-    width: 30%;
+    width: 100%;
     height: 80px;
-    margin: 50px 0px;
+    margin: 40px 0px;
 }
 #redactedTextCont .socialMedia i{
     font-size: 1.6rem;
@@ -135,8 +135,6 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* position: fixed;
-    bottom: 0; */
 }
 
 footer p{
@@ -163,11 +161,10 @@ footer p span{
     .container .output{
         width: 100%;
         height: 40vh;
-        background-color: red;
     }
 
     .container #redactedTextCont{
-        height: 35vh;
+        height: 38vh;
         padding: 10px;
     }
 
@@ -179,7 +176,6 @@ footer p span{
     .container .form{
         width: 100%;
         height: 40vh;
-        background-color: green;
     }
 
     textarea, input{
