@@ -25,6 +25,7 @@ btn.addEventListener("click", function () {
   // if statement to display an alert modal if all input field are empty
   if (originalTextEl.value == "" && wordsToRedactEl.value == "") {
     alert.classList.remove("hidden");
+    alertText.textContent = "Please fill in the input fields";
     return;
   }
 
