@@ -43,8 +43,11 @@ p, textarea, input, button{
     0%{
         transform: translateX(0px);
     }
-    100%{
+    50%{
         transform: translateX(500px);
+    }
+    100%{
+        transform: translateX(0px);
     }
 }
 
@@ -172,7 +175,7 @@ button{
     background-color: var(--subColor);
     border: 1px solid var(--mainColor);
     padding: 10px ;
-    position: absolute;
+    position: fixed;
     right: 10px;
     bottom: 20px;
     animation-name: moveInLeft;
